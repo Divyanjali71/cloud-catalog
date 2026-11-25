@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enterprise Cloud Service Catalog</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #172554, #1e3a8a);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 25px;
+    }
+
+    .container {
+      max-width: 850px;
+      width: 100%;
+      text-align: center;
+      padding: 55px 35px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 24px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .tag {
+      color: #93c5fd;
+      letter-spacing: 3px;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      color: #cbd5e1;
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    .student {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 18px;
+      border-radius: 12px;
+      margin: 25px 0;
+      line-height: 2;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    button {
+      padding: 15px 25px;
+      border: none;
+      border-radius: 10px;
+      background: #60a5fa;
+      color: #0f172a;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 15px;
+    }
+
+    button:hover {
+      background: #bfdbfe;
+      transform: translateY(-3px);
+    }
+
+    .status-btn {
+      background: #34d399;
+    }
+
+    .status-btn:hover {
+      background: #a7f3d0;
+    }
+
+    footer {
+      margin-top: 35px;
+      color: #94a3b8;
+      font-size: 13px;
+    }
+
+    @media(max-width:600px) {
+      h1 {
+        font-size: 29px;
+      }
+
+      .container {
+        padding: 35px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <p class="tag">CLOUD COMPUTING • API • DEPLOYMENT</p>
+
+    <h1>Enterprise Cloud Service Catalog</h1>
+
+    <p class="description">
+      Explore enterprise cloud services and access live API endpoints
+      through a Node.js and Express-powered application.
+    </p>
+
+    <div class="student">
+      <p><strong>Developer:</strong> Divyanjali</p>
+      <p><strong>Roll Number:</strong> 2648067</p>
+    </div>
+
+    <div class="buttons">
+      <button onclick="window.location.href='/api/services'">
+        View Cloud Services
+      </button>
+
+      <button class="status-btn"
+        onclick="window.location.href='/api/status'">
+        Check System Status
+      </button>
+    </div>
+
+    <footer>
+      Built using Node.js, Express.js and Vercel
+    </footer>
+
+  </div>
+</body>
+</html>
